@@ -9,8 +9,6 @@ Added some styling. Background colors and alignment and whatnot. Very simple CSS
 
 Didn't work too much on the site tonight, got distracted watching [this][0] for whatever reason. It had some interesting thoughts I could take very, even though I would not call myself anything near a Javascript developer. I was led to this video by this seemingly comprehensive list of [Front-End Dev Bookmarks][1].
 
-Also I figured I don't have to commit after every minor up date, so I'll just commit at the end of the night. This isn't a very important, version senstive type of project, so it should do no harm. Learnin' as I'm goin'.
-
 I'm not staying up late doing this again. Even though it's already pretty late.
 
 .Clay
