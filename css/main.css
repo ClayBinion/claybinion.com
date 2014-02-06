@@ -13,10 +13,11 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background-color: #3D3431;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
+  color:#FFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,9 +26,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: #FFF; }
+a:hover   { color: #D3D3D3; }
+a:visited { color: #BCD0D3; }
 
 /*****************************************************************************/
 /*
@@ -47,6 +48,12 @@ a:visited { color: #a0a; }
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
+}
+
+.excerpt{
+  padding-left: 25px;
+  font-size: 90%;
+  font-style: italic;
 }
 
 /*****************************************************************************/
@@ -71,23 +78,26 @@ a:visited { color: #a0a; }
 .title {
   display: inline-block;
   margin-bottom: 2em;
+  font: 30.34px Helvetica, Arial, sans-serif;
 }
 
 .title a {
-  color: #a00;
+  color: #FFF;
 }
 
 .title a:hover {
-  color: #000;
+  color: #D3D3D3;
 }
 
 .header a.extra {
   color: #aaa;
   margin-left: 1em;
+  float: right;
+  padding-top: 15px;
 }
 
 .header a.extra:hover {
-  color: #000;
+  color: #FFF;
 }
 
 .meta {
@@ -109,6 +119,10 @@ a:visited { color: #a0a; }
 
 .footer .contact a {
   color: #8085C1;
+}
+
+.footer #links{
+  float: right;
 }
 
 .footer .rss {
