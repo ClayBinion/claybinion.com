@@ -1,0 +1,29 @@
+/*  */
+body {
+	background-color: #1D4C74;
+	color: #f3f3f3;
+}
+
+/* h4 */
+.col-lg-6 {
+	text-align: center;
+}
+
+.col-lg-6 p{
+	text-align: left;
+	padding: 22px;
+}
+h4 {
+}
+
+img{
+}
+
+/* Changing the color of branding text */
+.text-muted{
+	color: #C7E0CD
+}
+
+footer, .footer{
+	color: #f3f3f3;
+}
