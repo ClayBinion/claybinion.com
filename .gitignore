@@ -216,3 +216,11 @@ pip-log.txt
 
 #Jekyll
 _drafts/
+
+#Vagrant
+Vagrantfile
+.vagrant
+
+#Sublime
+.sublime-project
+.sublime-workspace
