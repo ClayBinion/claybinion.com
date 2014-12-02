@@ -222,7 +222,5 @@ Vagrantfile
 .vagrant
 
 #Sublime
-.sublime-project
-.sublime-workspace
-
-#testing
+portfolio.sublime-project
+portfolio.sublime-workspace
