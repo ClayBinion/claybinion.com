@@ -5,18 +5,30 @@ body {
 }
 
 /* h4 */
-.col-lg-6 {
-	text-align: center;
-}
-
-.col-lg-6 p{
-	text-align: left;
-	padding: 22px;
-}
 h4 {
 }
 
 img{
+}
+
+/* Link styling for portfolio links */
+article a{
+	color: inherit;
+}
+
+article a:hover{
+	color: #95A2AD;
+}
+
+/* Each website of the listed portfolios is inside of one of these */
+article .col-lg-6 {
+	text-align: center;
+}
+
+/* Text below portfolio sample images */
+article .col-lg-6 p{
+	text-align: left;
+	padding: 22px;
 }
 
 /* Changing the color of branding text */
@@ -24,6 +36,7 @@ img{
 	color: #C7E0CD
 }
 
+/* Footer styling */
 footer, .footer{
 	color: #f3f3f3;
 }
