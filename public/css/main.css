@@ -1,7 +1,8 @@
 /*  */
 body {
-	background-color: #1D4C74;
-	color: #f3f3f3;
+	background-color: #E4ECF2;
+	color: #375C14;
+	padding-top: 0px;
 }
 
 /* h4 */
@@ -9,6 +10,40 @@ h4 {
 }
 
 img{
+}
+
+/* Styling for the page container */
+.container{
+}
+
+/* Styling for the header (Branding and Nav Container) */
+.header{
+	border: 3px solid #375C14;
+	border-top: none;
+	border-radius: 2px;
+	padding: 20px 0 0 25px;
+}
+
+/* Changing the color of branding text */
+.brand{
+	color: #375C14;
+	padding-bottom: 20px
+}
+
+/* Link styling for navigation */
+.nav > li{
+	float:left;
+}
+
+.nav > li >  a{
+	color: #375C14;
+	font-size: 16px;
+}
+
+.nav > li > a:hover, a:active, a:visited{
+	background-color: transparent;
+	color: #375C14;
+	text-decoration: underline;
 }
 
 /* Link styling for portfolio links */
@@ -31,12 +66,7 @@ article .col-lg-6 p{
 	padding: 22px;
 }
 
-/* Changing the color of branding text */
-.text-muted{
-	color: #C7E0CD
-}
-
 /* Footer styling */
 footer, .footer{
-	color: #f3f3f3;
+	color: #375C14;
 }
