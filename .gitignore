@@ -224,3 +224,6 @@ Vagrantfile
 #Sublime
 portfolio.sublime-project
 portfolio.sublime-workspace
+
+#Hidden folder for design files or large files
+.hidden
