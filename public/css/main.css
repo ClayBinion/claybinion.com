@@ -1,10 +1,10 @@
 /*  */
 body {
-	background-color: #E4ECF2;
-	color: #375C14;
+	font: 125%/1.5 "Source Sans Pro", sans-serif;
+	background-color: #375C14;
+	color: #FFF;
 	padding-top: 0px;
 	padding-bottom: 20px;
-
 }
 
 /* h4 */
@@ -28,9 +28,7 @@ img{
 
 /* Styling for the header (Branding and Nav Container) */
 .header{
-	border: 3px solid #375C14;
-	border-top: none;
-	border-radius: 2px;
+	border-bottom: 3px solid #FFF;
 	padding: 20px 0 0 25px;
 }
 
@@ -39,7 +37,7 @@ img{
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
-  color: #375C14;
+  color: #FFF;
   padding-bottom: 20px;
   padding-left: 20px;
 }
@@ -47,13 +45,14 @@ img{
 /* Link styling for navigation */
 .nav{
 	clear:both;
+	float: right;
 }
 .nav > li{
 	float:left;
 }
 
 .nav > li >  a{
-	color: #375C14;
+	color: #FFF;
 	font-size: 16px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -65,47 +64,55 @@ img{
 		font-weight: bold;
 	}
 
-.nav > li > a:hover, a:active, a:visited{
+.nav > li > a:hover, a:visited{
 	background-color: transparent;
-	color: #375C14;
 	text-decoration: underline;
-	font-weight: bold;
+	color: #fff;
 }
 
 /* Styling for the main portion of the page */
 article{
+	padding: 0 25px;
 	margin: 40px 0;
+	font-size: 18px;
 }
 
-article p + h4 {
-	  margin-top: 28px;
+article #introText{
+	text-align: center;
+	margin: 10px;
+}
+
+article p{
+	margin-top: 28px;
+    font-size: 75%;
+
 }
 
 /* Link styling for portfolio links */
 article a{
-	color: inherit;
+	color: #FFF;
+	text-decoration: underline;
 }
 
 article a:hover{
 	color: #95A2AD;
 }
 
-/* Each website of the listed portfolios is inside of one of these */
-article .col-lg-6 {
-	text-align: center;
-}
-
-/* Text below portfolio sample images */
-article .col-lg-6 p{
-	text-align: left;
-	padding: 22px;
-}
-
+	/* Styling for the Contact form on Contact page */
+	#contact ul{
+		list-style: none;
+		list-style-position: inside;
+		padding: 0;
+	}
+	#contact input{
+		clear: both;
+		float: right;
+	}
 /* Footer styling */
 footer, .footer{
-	padding-top: 19px;
-	border-top: 1px solid #e5e5e5;
-	color: #375C14;
+	padding: 20px 0 0 0;
+	border-top: 3px solid #FFF;
+	color: #FFF;
 }
 
 	/* Responsive: Portrait tablets and up */
@@ -129,8 +136,10 @@ footer, .footer{
 	  .header h3{
 	  	clear: none;
 	  }
-	  /* Remove the bottom border on the jumbotron for visual effect */
-	  .jumbotron {
-	    border-bottom: 0;
+
+	  .footer, footer{
+	  	padding-left: 25px;
 	  }
 	}
+
+
