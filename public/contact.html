@@ -29,15 +29,29 @@
 
     <div class="container" id="indexCont">
       <header class="header">
-        <nav>
-          <ul class="nav">
-            <li role="presentation"><a href="..">About</a></li>
-            <li role="presentation"><a href="../work.html">Work</a></li>
-            <li role="presentation" class="active">
-                <a href="#">Contact</a></li>
-          </ul>
+       
+        <nav class="navbar" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+             <h3><a href="..">Clay Binion</a></h3>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li role="presentation"><a href="..">About</a></li>
+              <li role="presentation"><a href="../work.html">Work</a></li>
+              <li role="presentation" class="active"><a href="../contact.html">
+                <span class="sr-only">(current)</span>Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
         </nav>
-        <h3><a href="..">Clay Binion</a></h3>
+
       </header>
 
       <article class="row">

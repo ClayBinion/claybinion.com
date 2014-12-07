@@ -44,7 +44,6 @@ img{
 
 /* Link styling for navigation */
 .nav{
-	clear:both;
 	float: right;
 }
 .nav > li{
@@ -57,7 +56,9 @@ img{
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #fff;
+}
 	/* Current page link */
 	.active{
 		text-decoration: underline;
