@@ -56,8 +56,12 @@ img{
 	padding-left: 10px;
 	padding-right: 10px;
 }
-.navbar-default .navbar-toggle .icon-bar{
-	background-color: #fff;
+.navbar-toggle{
+	border-color: #d3d3d3;
+}
+
+.navbar-toggle .icon-bar{
+	background-color: #d3d3d3;
 }
 	/* Current page link */
 	.active{
