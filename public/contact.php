@@ -9,12 +9,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subject = " Contact Form";
     $message = stripslashes(trim($_POST['contactMessage']));
     $pattern  = '/[\r\n]|Content-Type:|Bcc:|Cc:/i';
-    
+
     $emailIsValid = preg_match('/^[^0-9][A-z0-9._%+-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}$/', $email);
 
-if($name && $email && $emailIsValid && $message){
+    if($name && $email && $emailIsValid && $subject && $message){
         $subject = "$subjectPrefix $subject";
-        $body = "Name: $name <br /> Email: $email <br /> Message: $message";
+        $body = "Nome: $name <br /> Email: $email <br /> Mensagem: $message";
 
         $headers  = 'MIME-Version: 1.1' . PHP_EOL;
         $headers .= 'Content-type: text/html; charset=utf-8' . PHP_EOL;
@@ -22,14 +22,13 @@ if($name && $email && $emailIsValid && $message){
         $headers .= "Return-Path: $emailTo" . PHP_EOL;
         $headers .= "Reply-To: $email" . PHP_EOL;
         $headers .= "X-Mailer: PHP/". phpversion() . PHP_EOL;
-        mail($emailTo, $body, $headers);
+
+        mail($emailTo, $subject, $body, $headers);
         $emailSent = true;
-    } 
-    else {
+    } else {
         $hasError = true;
     }
 }
-
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0050) -->
