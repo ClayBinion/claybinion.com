@@ -6,14 +6,12 @@ $emailTo = 'contact@claybinion.com';
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name    = stripslashes(trim($_POST['contactName']));
     $email   = stripslashes(trim($_POST['contactEmail']));
-    $subject = "Portfolio Contact Form";
     $message = stripslashes(trim($_POST['contactMessage']));
     $pattern  = '/[\r\n]|Content-Type:|Bcc:|Cc:/i';
     
     $emailIsValid = preg_match('/^[^0-9][A-z0-9._%+-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}$/', $email);
 
-if($name && $email && $emailIsValid && $subject && $message){
-        $subject = "$subjectPrefix $subject";
+if($name && $email && $emailIsValid && $message){
         $body = "Name: $name <br /> Email: $email <br /> Message: $message";
         $headers  = 'MIME-Version: 1.1' . PHP_EOL;
         $headers .= 'Content-type: text/html; charset=utf-8' . PHP_EOL;
@@ -21,7 +19,7 @@ if($name && $email && $emailIsValid && $subject && $message){
         $headers .= "Return-Path: $emailTo" . PHP_EOL;
         $headers .= "Reply-To: $email" . PHP_EOL;
         $headers .= "X-Mailer: PHP/". phpversion() . PHP_EOL;
-        mail($emailTo, $subject, $body, $headers);
+        mail($emailTo, $body, $headers);
         $emailSent = true;
     } 
     else {
