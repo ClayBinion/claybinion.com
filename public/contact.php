@@ -1,20 +1,20 @@
 <?php
 
-$subjectPrefix = '[Contato via Site]';
+$subjectPrefix = ' ';
 $emailTo = 'contact@claybinion.com';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name    = stripslashes(trim($_POST['contactName']));
     $email   = stripslashes(trim($_POST['contactEmail']));
-    $subject = stripslashes(trim($_POST['contactMessage']));
-    $message = "Portfolio Contact Form";
+    $subject = "Portfolio Contact Form";
+    $message = stripslashes(trim($_POST['contactMessage']));
     $pattern  = '/[\r\n]|Content-Type:|Bcc:|Cc:/i';
     
     $emailIsValid = preg_match('/^[^0-9][A-z0-9._%+-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}$/', $email);
 
 if($name && $email && $emailIsValid && $subject && $message){
         $subject = "$subjectPrefix $subject";
-        $body = "Nome: $name <br /> Email: $email <br /> Mensagem: $message";
+        $body = "Name: $name <br /> Email: $email <br /> Message: $message";
         $headers  = 'MIME-Version: 1.1' . PHP_EOL;
         $headers .= 'Content-type: text/html; charset=utf-8' . PHP_EOL;
         $headers .= "From: $name <$email>" . PHP_EOL;
