@@ -1,6 +1,6 @@
 <?php
 
-$subjectPrefix = ' ';
+$subjectPrefix = 'A message from:';
 $emailTo = 'contact@claybinion.com';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
