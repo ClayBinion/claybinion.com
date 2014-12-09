@@ -8,53 +8,179 @@
 
 html,
 body {
-  height: 100%;
-  background-color: #333;
-}
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	font: 125%/1.5 "Source Sans Pro", sans-serif;
+	background-color: #375C14;
+	color: #FFF;
+	padding-top: 0px;
+	padding-bottom: 20px;
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
+/* h4 */
+h4 {
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 30px;
+img{
 }
 
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
+/* Styling for the page container */
+.container{
 }
 
-@media (min-width: 992px) {
-  .cover-container {
-    width: 700px;
-  }
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
 }
+
+/* Styling for the header (Branding and Nav Container) */
+.header{
+	border-bottom: 3px solid #FFF;
+	padding: 20px 0 0 25px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  color: #FFF;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* Link styling for navigation */
+.nav{
+	float: right;
+}
+.nav > li{
+	float:left;
+}
+
+.nav > li >  a{
+	color: #FFF;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.navbar-toggle{
+	border-color: #d3d3d3;
+}
+
+.navbar-toggle .icon-bar{
+	background-color: #d3d3d3;
+}
+	/* Current page link */
+	.active{
+		text-decoration: underline;
+		font-weight: bold;
+	}
+
+.nav > li > a:hover, a:visited{
+	background-color: transparent;
+	text-decoration: underline;
+	color: #fff;
+}
+
+/* Styling for the main portion of the page */
+article{
+	padding: 0 25px;
+	margin: 40px 0;
+	font-size: 18px;
+}
+
+article #introText{
+	text-align: center;
+	margin: 10px;
+}
+
+article p{
+	margin-top: 28px;
+    font-size: 75%;
+
+}
+
+/* Link styling for portfolio links */
+article a{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+article a:hover{
+	color: #95A2AD;
+}
+
+/* Styling for the Contact form on Contact page */
+#contact ul{
+	list-style: none;
+	list-style-position: inside;
+	padding: 0;
+}
+
+#contact ul li{
+	margin-bottom: 25px;
+}
+
+#contact input, #contact textarea {
+	width: 200px;
+	clear: both;
+	float: right;
+	font-size: 12px;
+	color: #000;
+}
+
+#contact button{
+	float: right;
+	clear: both;
+	margin-top: 15px;
+	width: 75px
+}
+
+#contact button:hover{
+	background-color: #90C65C;
+	font-weight: bold;
+}
+
+
+#contact textarea{
+	height: 150px;
+}
+
+#contact input[type=submit]{
+	margin-top: 10px;
+}
+
+/* Footer styling */
+footer, .footer{
+	padding: 20px 0 0 0;
+	border-top: 3px solid #FFF;
+	color: #FFF;
+}
+
+	/* Responsive: Portrait tablets and up */
+	@media screen and (min-width: 768px) {
+	  .container {
+	    max-width: 730px;
+	  }
+
+	  /* Remove the padding we set earlier */
+	  .header,
+	  .marketing,
+	  .footer {
+	    padding-right: 0;
+	    padding-left: 0;
+	  }
+	  /* Space out the masthead */
+	  .header {
+	    margin-bottom: 30px;
+	  }
+
+	  .header h3{
+	  	clear: none;
+	  }
+
+	  .footer, footer{
+	  	padding-left: 25px;
+	  }
+	}
