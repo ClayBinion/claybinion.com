@@ -103,16 +103,46 @@ article a:hover{
 	color: #95A2AD;
 }
 
-	/* Styling for the Contact form on Contact page */
-	#contact ul{
-		list-style: none;
-		list-style-position: inside;
-		padding: 0;
-	}
-	#contact input{
-		clear: both;
-		float: right;
-	}
+/* Styling for the Contact form on Contact page */
+#contact ul{
+	list-style: none;
+	list-style-position: inside;
+	padding: 0;
+}
+
+#contact ul li{
+	margin-bottom: 25px;
+}
+
+#contact input, #contact textarea {
+	width: 200px;
+	clear: both;
+	float: right;
+	font-size: 12px;
+	color: #000;
+}
+
+#contact button{
+	float: right;
+	clear: both;
+	margin-top: 15px;
+	width: 75px
+}
+
+#contact button:hover{
+	background-color: #90C65C;
+	font-weight: bold;
+}
+
+
+#contact textarea{
+	height: 150px;
+}
+
+#contact input[type=submit]{
+	margin-top: 10px;
+}
+
 /* Footer styling */
 footer, .footer{
 	padding: 20px 0 0 0;

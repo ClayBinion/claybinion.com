@@ -1,3 +1,35 @@
+<?php
+
+$subjectPrefix = '[Contato via Site]';
+$emailTo = 'contact@claybinion.com';
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name    = stripslashes(trim($_POST['contactName']));
+    $email   = stripslashes(trim($_POST['contactEmail']));
+    $subject = stripslashes(trim($_POST['contactMessage']));
+    $message = "Portfolio Contact Form";
+    $pattern  = '/[\r\n]|Content-Type:|Bcc:|Cc:/i';
+    
+    $emailIsValid = preg_match('/^[^0-9][A-z0-9._%+-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}$/', $email);
+
+if($name && $email && $emailIsValid && $subject && $message){
+        $subject = "$subjectPrefix $subject";
+        $body = "Nome: $name <br /> Email: $email <br /> Mensagem: $message";
+        $headers  = 'MIME-Version: 1.1' . PHP_EOL;
+        $headers .= 'Content-type: text/html; charset=utf-8' . PHP_EOL;
+        $headers .= "From: $name <$email>" . PHP_EOL;
+        $headers .= "Return-Path: $emailTo" . PHP_EOL;
+        $headers .= "Reply-To: $email" . PHP_EOL;
+        $headers .= "X-Mailer: PHP/". phpversion() . PHP_EOL;
+        mail($emailTo, $subject, $body, $headers);
+        $emailSent = true;
+    } 
+    else {
+        $hasError = true;
+    }
+}
+
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0050) -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -45,7 +77,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li role="presentation"><a href="..">About</a></li>
           <!--<li role="presentation"><a href="../work.html">Work</a></li>-->
-              <li role="presentation" class="active"><a href="../contact.html">
+              <li role="presentation" class="active"><a href="../contact.php">
                 <span class="sr-only">(current)</span>Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -56,8 +88,20 @@
 
       <article class="row">
         <div class="col-lg-3"></div>
+        
+         <?php if(isset($emailSent) && $emailSent): ?>
+        <div class="col-lg-6">
+            <div class="alert alert-success text-center">I will be in contact with you shortly. <br /> Thank you for the interest.</div>
+        </div>
+    	<?php else: ?>
+        <?php if(isset($hasError) && $hasError): ?>
+        <div class="col-lg-6">
+            <div class="alert alert-danger text-center">Something has gone wrong. Please try again soon.</div>
+        </div>
+        <?php endif; ?>
+
         <div class="col-lg-6" id="contact">
-          <form action="contact.php" method="post">
+          <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" role="form" method="post">
             <ul>
               <li><label for="contactName">Name:</label> 
                   <input id="contactName"
@@ -76,7 +120,7 @@
               <li><label for="contactMessage">Message:</label> 
                   <textarea id="contactMessage"
                             name="contactMessage" 
-                            placeholder="Type your question/comment/concern/message here."></textarea>
+                            placeholder="Type your message here."></textarea>
               </li> 
               <li><button class="btn btn-default"
                           name="contactSubmit" 
@@ -87,6 +131,7 @@
               </li> 
             </ul>
         </div>
+        <?php endif; ?>
         <div class="col-lg-3"></div>
       </article>
 
