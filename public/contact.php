@@ -55,6 +55,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- ReCaptcha JS -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
   </head>
 
   <body>
@@ -102,6 +106,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <div class="col-lg-6" id="contact">
           <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" role="form" method="post">
+            
             <ul>
               <li><label for="contactName">Name:</label> 
                   <input id="contactName"
@@ -121,14 +126,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                   <textarea id="contactMessage"
                             name="contactMessage" 
                             placeholder="Type your message here."></textarea>
-              </li> 
+              </li>
+              <!--<li>
+                <?php
+                  require_once('recaptchalib.php');
+                  $publickey = "6Lf4iP8SAAAAAMXZfK01ePt-204We2Jnmg7LZXt8"; // you got this from the signup page
+                  echo recaptcha_get_html($publickey);
+                ?>
+              </li>-->  
               <li><button class="btn btn-default"
                           name="contactSubmit" 
                           type="submit"
                           value="Submit" />
                       Submit
                   </button>
-              </li> 
+              </li>
             </ul>
         </div>
         <?php endif; ?>
