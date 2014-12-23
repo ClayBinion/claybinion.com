@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="description" content="The Portfolio of Clay Binion">
     <meta name="author" content="Clay Binion">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <title>Clay Binion - Contact Me</title>
 
