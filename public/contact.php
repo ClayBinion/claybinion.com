@@ -149,7 +149,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       <footer>
         <p>
-          Clay Binion <strong>on</strong>
+          Find me <strong>on</strong>
             <a href="https://github.com/claybinion" target="_blank">Github</a>
             <!--<a href="https://twitter.com/claybinion" target="_blank">Twitter</a>-->
         </p>
