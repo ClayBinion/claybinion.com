@@ -81,7 +81,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <ul class="nav navbar-nav navbar-right">
               <li role="presentation"><a href="..">About</a></li>
           <!--<li role="presentation"><a href="../work.html">Work</a></li>-->
-              <li role="presentation" class="active"><a href="../contact.php">
+              <li role="presentation" class="active"><a href="../contact">
                 <span class="sr-only">(current)</span>Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
