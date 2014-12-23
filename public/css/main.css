@@ -68,6 +68,11 @@ img{
 	border-color: #d3d3d3;
 }
 
+.navbar-collapse{
+	border: none;
+	box-shadow: none;
+}
+
 .navbar-toggle .icon-bar{
 	background-color: #d3d3d3;
 }
@@ -152,11 +157,27 @@ article a:hover{
 }
 
 /* Footer styling */
-footer, .footer{
+footer{
 	padding: 20px 0 0 0;
 	border-top: 3px solid #FFF;
 	color: #FFF;
 	font-size: 60%;
+}
+
+footer p{
+	padding: 0 0 0 12px;
+}
+
+footer a, strong {
+	padding-left:10px;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+footer a:hover{
+	color: #d3d3d3;
 }
 
 	/* Responsive: Portrait tablets and up */

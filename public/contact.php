@@ -147,8 +147,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="col-lg-3"></div>
       </article>
 
-      <footer class="footer">
-        <p>Clay Binion &copy; 2014</p>
+      <footer>
+        <p>
+          Clay Binion <strong>on</strong>
+            <a href="https://github.com/claybinion" target="_blank">Github</a>
+            <!--<a href="https://twitter.com/claybinion" target="_blank">Twitter</a>-->
+        </p>
       </footer>
 
     </div> <!-- /container -->
