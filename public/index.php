@@ -120,8 +120,8 @@
                   <button class="btn btn-default"
                           name="contactSubmit" 
                           type="submit"
-                          value="Submit" />
-                      Submit
+                          value="Contact me!" />
+                      Contact me!
                   </button>
               </li>
             </ul>

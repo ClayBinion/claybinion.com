@@ -145,6 +145,7 @@ article a:hover{
 
 #contact #message{
 	width: 100%;
+	margin-bottom: 0;
 }
 
 #contact #message label{
@@ -153,6 +154,7 @@ article a:hover{
 }
 
 #contact #message textarea{
+	color: #000;
 	width: 100%;
 	height: 150px;
 	border-radius: 3px;
