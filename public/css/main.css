@@ -107,7 +107,6 @@ article #introText{
 article p{
 	margin-top: 28px;
     font-size: 75%;
-
 }
 
 /* Link styling for portfolio links */
@@ -129,21 +128,48 @@ article a:hover{
 
 #contact ul li{
 	margin-bottom: 25px;
+	width: 50%;
+	float: left;
 }
 
 #contact input, #contact textarea {
-	width: 200px;
+	width: 80%;
 	clear: both;
-	float: right;
 	font-size: 12px;
 	color: #000;
+}
+
+#contact #email {
+	float: right;
+}
+
+#contact #email input, #contact #email label {
+	float: right;
+}
+
+#contact #message{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+#contact #message textarea{
+	width: 100%;
+}
+
+#contact #message label{
+	width: 100%;
+	text-align: center;
+}
+
+#contact #submit{
+	width: 100%;
 }
 
 #contact button{
 	float: right;
 	clear: both;
 	margin-top: 15px;
-	width: 75px
+	width: 100%;
 }
 
 #contact button:hover{

@@ -43,10 +43,10 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li role="presentation" class="active"><a href="..">About
+              <li role="presentation" class="active"><a href="#">About
                 <span class="sr-only">(current)</span></a></li>
           <!--<li role="presentation"><a href="../work.html">Work</a></li>-->
-              <li role="presentation"><a href="../contact">Contact</a></li>
+              <li role="presentation"><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -66,6 +66,67 @@
           <h4 id="introText">
             Come back soon for a portfolio of my work. You can <a href="contact">contact</a> me in the meantime.
           </h4>
+      </article>
+
+      <article class="row">        
+         <?php if(isset($emailSent) && $emailSent): ?>
+        <div class="col-lg-12">
+            <div class="alert alert-success text-center">I will be in contact with you shortly. <br /> Thank you for the interest.</div>
+        </div>
+      <?php else: ?>
+        <?php if(isset($hasError) && $hasError): ?>
+        <div class="col-lg-12">
+            <div class="alert alert-danger text-center">Something has gone wrong. Please try again soon.</div>
+        </div>
+        <?php endif; ?>
+
+        <div class="col-lg-12" id="contact">
+          <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" role="form" method="post">
+            
+            <ul>
+              <li id="name">
+                  <label for="contactName">Name</label>
+                <br/>
+                  <input id="contactName"
+                         name="contactName" 
+                         type="text" 
+                         placeholder="Type your name here." />
+
+              </li>
+              <li id="email">
+                  <label for="contactEmail">Email</label>
+                <br/> 
+                  <input id="contactEmail"
+                         name="contactEmail"
+                         type="email" 
+                         placeholder="Type your email here." />
+              
+              </li>
+              <li id="message">
+                  <label for="contactMessage">Message</label>
+                <br/> 
+                  <textarea id="contactMessage"
+                            name="contactMessage" 
+                            placeholder="Type your message here."></textarea>
+              </li>
+              <!--<li>
+                <?php
+                  require_once('recaptchalib.php');
+                  $publickey = "6Lf4iP8SAAAAAMXZfK01ePt-204We2Jnmg7LZXt8"; // you got this from the signup page
+                  echo recaptcha_get_html($publickey);
+                ?>
+              </li>-->  
+              <li id="submit">
+                  <button class="btn btn-default"
+                          name="contactSubmit" 
+                          type="submit"
+                          value="Submit" />
+                      Submit
+                  </button>
+              </li>
+            </ul>
+        </div>
+        <?php endif; ?>
       </article>
 
       <footer>
