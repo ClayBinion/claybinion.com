@@ -64,7 +64,7 @@
           </h3>
         <br />
           <h4 id="introText">
-            Come back soon for a portfolio of my work. You can <a href="#contact">contact</a> me in the meantime.
+            Come back soon for a portfolio of my work. You can <a href="contact">contact</a> me in the meantime.
           </h4>
       </article>
 
