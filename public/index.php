@@ -46,7 +46,7 @@
               <li role="presentation" class="active"><a href="#">About
                 <span class="sr-only">(current)</span></a></li>
           <!--<li role="presentation"><a href="../work.html">Work</a></li>-->
-              <li role="presentation"><a href="#contact">Contact</a></li>
+              <li role="presentation"><a href="javascript:document.getElementById('contactName').focus()">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -64,7 +64,7 @@
           </h3>
         <br />
           <h4 id="introText">
-            Come back soon for a portfolio of my work. You can <a href="#contact">contact</a> me in the meantime.
+            Come back soon for a portfolio of my work. You can <a href="javascript:document.getElementById('contactName').focus()">contact</a> me in the meantime.
           </h4>
       </article>
 

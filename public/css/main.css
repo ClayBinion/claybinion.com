@@ -132,15 +132,11 @@ article a:hover{
 	float: left;
 }
 
-#contact input, #contact textarea {
+#contact input{
 	width: 80%;
 	clear: both;
-	font-size: 12px;
 	color: #000;
-}
-
-#contact #email {
-	float: right;
+	font-size: 16px;
 }
 
 #contact #email input, #contact #email label {
@@ -149,16 +145,19 @@ article a:hover{
 
 #contact #message{
 	width: 100%;
-	margin-bottom: 0;
-}
-
-#contact #message textarea{
-	width: 100%;
 }
 
 #contact #message label{
 	width: 100%;
 	text-align: center;
+}
+
+#contact #message textarea{
+	width: 100%;
+	height: 150px;
+	border-radius: 3px;
+	clear: both;
+	font-size: 16px;
 }
 
 #contact #submit{
@@ -170,16 +169,12 @@ article a:hover{
 	clear: both;
 	margin-top: 15px;
 	width: 100%;
+	border-radius: 3px;
 }
 
 #contact button:hover{
 	background-color: #90C65C;
 	font-weight: bold;
-}
-
-
-#contact textarea{
-	height: 150px;
 }
 
 #contact input[type=submit]{
