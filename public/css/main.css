@@ -185,6 +185,11 @@ article a:hover{
 	font-size: 16px;
 }
 
+
+#contact input:focus, #contact textarea:focus{
+	background-color: #fff;
+}
+
 #contact #submit{
 	width: 100%;
 }
@@ -201,6 +206,7 @@ article a:hover{
 
 #contact button:hover{
 	background-color: #90C65C;
+	border: 1px dashed #d3d3d3;
 	font-weight: bold;
 }
 
