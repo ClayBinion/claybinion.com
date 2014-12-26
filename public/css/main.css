@@ -168,7 +168,6 @@ article a:hover{
 
 #contact #message label{
 	width: 100%;
-	text-align: center;
 }
 
 #contact #message textarea{
@@ -271,6 +270,10 @@ footer a:hover{
 	  
 	  #contact #email input, #contact #email label {
 	  	float: right;
+	  }
+
+	  #contact #message label{
+	  	text-align: center;
 	  }
 	  
 	  .footer, footer{
