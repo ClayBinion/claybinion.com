@@ -146,22 +146,18 @@ article a:hover{
 
 #contact ul li{
 	margin-bottom: 25px;
-	width: 50%;
+	width: 100%;
 	float: left;
 }
 
 #contact input{
-	width: 80%;
+	width: 100%;
 	clear: both;
 	background-color: #A8C997;
 	border:none;
 	padding:2px;
 	color: #000;
 	font-size: 16px;
-}
-
-#contact #email input, #contact #email label {
-	float: right;
 }
 
 #contact #message{
@@ -184,7 +180,6 @@ article a:hover{
 	clear: both;
 	font-size: 16px;
 }
-
 
 #contact input:focus, #contact textarea:focus{
 	background-color: #fff;
@@ -260,7 +255,21 @@ footer a:hover{
 	  .header h3{
 	  	clear: none;
 	  }
-
+	  
+	  #contact ul li{
+		margin-bottom: 25px;
+		width: 50%;
+		float: left;
+	  }
+	  
+	  #contact input{
+	  	width: 80%;
+	  }
+	  
+	  #contact #email input, #contact #email label {
+	  	float: right;
+	  }
+	  
 	  .footer, footer{
 	  	padding-left: 25px;
 	  }

@@ -70,17 +70,17 @@
 
       <article class="row">        
          <?php if(isset($emailSent) && $emailSent): ?>
-        <div class="col-lg-12">
+        <div class="col-sm-12">
             <div class="alert alert-success text-center">I will be in contact with you shortly. <br /> Thank you for the interest.</div>
         </div>
       <?php else: ?>
         <?php if(isset($hasError) && $hasError): ?>
-        <div class="col-lg-12">
+        <div class="col-sm-12">
             <div class="alert alert-danger text-center">Something has gone wrong. Please try again soon.</div>
         </div>
         <?php endif; ?>
 
-        <div class="col-lg-12" id="contact">
+        <div class="col-sm-12" id="contact">
           <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" role="form" method="post">
             
             <ul>
