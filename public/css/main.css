@@ -22,6 +22,24 @@ h4 {
 img{
 }
 
+/* Color styling for input form placeholder text */
+::-webkit-input-placeholder {
+   color: #6A6B69;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #6A6B69;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #6A6B69;  
+}
+
+:-ms-input-placeholder {  
+   color: #6A6B69;  
+}
+
+
 /* Styling for the page container */
 .container{
 }
@@ -107,7 +125,6 @@ article #introText{
 article p{
 	margin-top: 28px;
     font-size: 75%;
-
 }
 
 /* Link styling for portfolio links */
@@ -129,31 +146,66 @@ article a:hover{
 
 #contact ul li{
 	margin-bottom: 25px;
+	width: 100%;
+	float: left;
 }
 
-#contact input, #contact textarea {
-	width: 200px;
+#contact input{
+	width: 100%;
 	clear: both;
-	float: right;
-	font-size: 12px;
+	background-color: #A8C997;
+	border:none;
+	padding:2px;
 	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+#contact #message{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+#contact #message label{
+	width: 100%;
+	text-align: center;
+}
+
+#contact #message textarea{
+	color: #000;
+	background-color: #A8C997;
+	width: 100%;
+	height: 150px;
+	border:none;
+	border-radius: 3px;
+	clear: both;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+#contact input:focus, #contact #message textarea:focus{
+	background-color: #fff;
+	font-weight: normal;
+}
+
+#contact #submit{
+	width: 100%;
 }
 
 #contact button{
 	float: right;
 	clear: both;
 	margin-top: 15px;
-	width: 75px
+	width: 100%;
+	border: 1px dashed #000;
+	border-radius: 3px;
+	background-color: #A8C997
 }
 
-#contact button:hover{
+#contact button:hover, #contact button:focus{
 	background-color: #90C65C;
+	border: 1px dashed #d3d3d3;
 	font-weight: bold;
-}
-
-
-#contact textarea{
-	height: 150px;
 }
 
 #contact input[type=submit]{
@@ -206,7 +258,21 @@ footer a:hover{
 	  .header h3{
 	  	clear: none;
 	  }
-
+	  
+	  #contact ul li{
+		margin-bottom: 25px;
+		width: 50%;
+		float: left;
+	  }
+	  
+	  #contact input{
+	  	width: 80%;
+	  }
+	  
+	  #contact #email input, #contact #email label {
+	  	float: right;
+	  }
+	  
 	  .footer, footer{
 	  	padding-left: 25px;
 	  }
