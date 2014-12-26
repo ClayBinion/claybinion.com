@@ -155,6 +155,7 @@ article a:hover{
 	clear: both;
 	background-color: #A8C997;
 	border:none;
+	border-radius: 3px;
 	padding:2px;
 	color: #000;
 	font-size: 16px;
