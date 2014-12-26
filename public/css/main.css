@@ -158,6 +158,7 @@ article a:hover{
 	padding:2px;
 	color: #000;
 	font-size: 16px;
+	font-weight: 700;
 }
 
 #contact #message{
@@ -179,10 +180,12 @@ article a:hover{
 	border-radius: 3px;
 	clear: both;
 	font-size: 16px;
+	font-weight: 700;
 }
 
-#contact input:focus, #contact textarea:focus{
+#contact input:focus, #contact #message textarea:focus{
 	background-color: #fff;
+	font-weight: normal;
 }
 
 #contact #submit{
@@ -199,7 +202,7 @@ article a:hover{
 	background-color: #A8C997
 }
 
-#contact button:hover{
+#contact button:hover, #contact button:focus{
 	background-color: #90C65C;
 	border: 1px dashed #d3d3d3;
 	font-weight: bold;
