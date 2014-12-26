@@ -43,8 +43,6 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li role="presentation" class="active"><a href="#">About
-                <span class="sr-only">(current)</span></a></li>
           <!--<li role="presentation"><a href="../work.html">Work</a></li>-->
               <li role="presentation"><a href="javascript:document.getElementById('contactName').focus()">Contact</a></li>
             </ul>
