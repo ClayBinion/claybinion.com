@@ -1,11 +1,9 @@
+/* Mobile Styling First */
 /* Body */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-/* Header */
-
 
 /* Nav */
 nav{
@@ -14,16 +12,71 @@ nav{
 
 .navbar {
   margin: 0 auto 20px auto;
-  width: 230px;
+  width: 200px;
   border-radius: 0;
   background: none;
   border: none;
 }
-
 .navbar-nav > li {
   float: left;
 }
-/* Main */
 
+/* Header */
 
+/* Portfolio */
+.folio .col-md-6{
+  padding: 0;
+}
+
+.folio img{
+  display: block;
+  margin: 25px auto;
+  width: 300px;
+  height: 300px;
+}
 /* Footer */
+
+/* Now we get some screens larger than 768px (iPad) */
+	@media (min-width: 768px){
+
+	  /* Body */
+
+	  /* Container */
+	  .container{
+	  	max-width: 868px;
+	  }
+	  /* Nav */
+	  .navbar {
+	    margin: 0 auto 20px auto;
+	    border-radius: 0;
+	  }
+  
+	  .navbar-nav{
+	    margin: 0 -15px;
+	  }
+
+      /* Header */
+
+      /* Portfolio */
+      .folio .col-md-6{
+  		padding: 0 15px;
+	  }
+
+      .folio img{
+      }
+	}
+
+/* Now we get some screens larger than 568px (Small Tablet) */
+	@media (min-width: 568px){
+	  /* Body */
+
+	  /* Nav */
+
+      /* Header */
+
+      /* Portfolio */
+	  .folio .col-md-6{
+	  	width: 50%;
+	  	float: left;
+	  }
+	}
