@@ -1,0 +1,29 @@
+/* Body */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Header */
+
+
+/* Nav */
+nav{
+  display: block;
+}
+
+.navbar {
+  margin: 0 auto 20px auto;
+  width: 230px;
+  border-radius: 0;
+  background: none;
+  border: none;
+}
+
+.navbar-nav > li {
+  float: left;
+}
+/* Main */
+
+
+/* Footer */

@@ -6,7 +6,7 @@ $emailTo = 'contact@claybinion.com';
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name    = stripslashes(trim($_POST['contactName']));
     $email   = stripslashes(trim($_POST['contactEmail']));
-    $subject = " Contact Form";
+    $subject = "Contact Form";
     $message = stripslashes(trim($_POST['contactMessage']));
     $pattern  = '/[\r\n]|Content-Type:|Bcc:|Cc:/i';
 
@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="description" content="The Portfolio of Clay Binion">
     <meta name="author" content="Clay Binion">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href=" img/favicon.ico" type="image/x-icon">
 
     <title>Clay Binion - Portfolio</title>
 
