@@ -1,6 +1,7 @@
 /* Mobile Styling First */
 /* Body */
 body {
+  background-image: linear-gradient(-90deg, #45C9BE, #2A744B);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -17,10 +18,18 @@ nav{
   background: none;
   border: none;
 }
+
 .navbar-nav > li {
   float: left;
 }
+.navbar-default .navbar-nav>li>a{
+	color: #fff;
+}
 
+.navbar-default .navbar-nav>li>a:hover{
+	color: #DBDFB9;
+	text-decoration: underline;
+}
 /* Header */
 
 /* Portfolio */
